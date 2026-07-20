@@ -1,0 +1,7 @@
+// Fix linker error: undefined reference touchgfx::paint::rgb565::*
+// Các hàm paint có implementation trong header *Impl.hpp
+// nhưng không được compile sẵn trong libtouchgfx.a
+// → include vào 1 translation unit để compile cùng project.
+#include <touchgfx/hal/Paint.hpp>
+#include <touchgfx/hal/PaintImpl.hpp>
+#include <touchgfx/hal/PaintRGB565Impl.hpp>
