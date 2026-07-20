@@ -85,14 +85,14 @@ Trong TouchGFX Designer bấm **Run Simulator** (F5). Chuột trái = chạm mà
 └── BaoCao_FlappyBird.md   # Báo cáo đồ án chi tiết
 ```
 
-## Thành viên & đóng góp
+## Tác giả
 
-| Thành viên | Công việc |
-|-----------|-----------|
-| *(Tên 1)* | Game engine: vật lý, va chạm, cấp độ, máy trạng thái |
-| *(Tên 2)* | UI TouchGFX: thiết kế màn hình, GameView, animation |
-| *(Tên 3)* | Phần cứng/hệ thống: CubeMX, FreeRTOS, PA0, LED, nạp board |
-| *(Tên 4)* | Kiểm thử, quay demo, báo cáo & README |
+| | |
+|---|---|
+| **Sinh viên thực hiện** | Nguyễn Đăng Diện — MSSV 20225805 |
+| **Giảng viên hướng dẫn** | Thầy Đỗ Công Thuần |
+
+Project do một mình thực hiện toàn bộ: game engine, UI TouchGFX, cấu hình phần cứng (CubeMX, FreeRTOS, PA0, LED), kiểm thử và báo cáo.
 
 ## Demo
 

@@ -1,6 +1,7 @@
 # BÁO CÁO ĐỒ ÁN: GAME FLAPPY BIRD TRÊN KIT STM32F429I-DISCOVERY
 
-**Nhóm thực hiện:** *(điền tên các thành viên)*
+**Sinh viên thực hiện:** Nguyễn Đăng Diện — MSSV 20225805
+**Giảng viên hướng dẫn:** Thầy Đỗ Công Thuần
 **Ngày báo cáo:** 20/07/2026
 
 ---
@@ -176,7 +177,7 @@ VSYNC → handleTickEvent()
 
 ### 3.1. GitHub & môi trường phát triển
 
-- **Link repository:** *(điền link GitHub sau khi push, kèm file README.md)*
+- **Link repository:** https://github.com/Dieenj/flappy_bird (kèm file README.md hướng dẫn cài đặt)
 - Nội dung README cần có: hướng dẫn clone, mở project, build, nạp board; danh sách tool và version:
 
 | Tool | Version |
@@ -196,16 +197,16 @@ VSYNC → handleTickEvent()
 3. **GameView**: ánh xạ trạng thái engine → widget TouchGFX. Ống được vẽ bằng 4 Box/ống (thân trên, nắp trên, thân dưới, nắp dưới) × 5 ống = 20 widget, chỉ `invalidate()` vùng thay đổi để tiết kiệm băng thông vẽ.
 4. **Khởi tạo hệ thống** (`main.c`): cấu hình clock 180 MHz, các ngoại vi LTDC/DMA2D/FMC/I2C3/SPI5/TIM7/CRC, tạo 2 task FreeRTOS; `TouchGFX_Task` chạy vòng lặp đồ họa.
 
-### 3.3. Đóng góp của từng thành viên
+### 3.3. Đóng góp của thành viên
 
-*(Điền theo thực tế nhóm — thể hiện tương ứng ở số commit trên GitHub)*
+Project do một thành viên duy nhất — **Nguyễn Đăng Diện (20225805)** — thực hiện toàn bộ các phần việc (thể hiện ở 100% số commit trên GitHub):
 
-| Thành viên | Công việc | Số commit |
-|-----------|-----------|-----------|
-| *(Tên 1)* | Game engine: vật lý, va chạm, cấp độ, máy trạng thái | |
-| *(Tên 2)* | UI TouchGFX: thiết kế màn hình, GameView, animation | |
-| *(Tên 3)* | Phần cứng/hệ thống: CubeMX, FreeRTOS, PA0, LED, nạp board | |
-| *(Tên 4)* | Kiểm thử, quay demo, viết báo cáo & README | |
+| Phần việc | Nội dung |
+|-----------|----------|
+| Game engine | Vật lý chim, va chạm, hệ thống 6 cấp độ, máy trạng thái, PRNG |
+| UI TouchGFX | Thiết kế các màn hình, GameView, animation vỗ cánh, overlay |
+| Phần cứng / hệ thống | Cấu hình CubeMX (LTDC, DMA2D, FMC, I2C3, SPI5...), FreeRTOS, nút PA0, LED |
+| Hoàn thiện | Kiểm thử trên simulator và board, quay demo, viết báo cáo & README |
 
 ### 3.4. Kết quả
 
